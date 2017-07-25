@@ -1,9 +1,9 @@
-## Description
+# Description
 
 This is a simple application that demonstrate the power of rest API, tableView and collectionView. 
 Firstly, I want to acknowledge that the project is inspired by Amazon's kindle app and guided by Brian Voong through his application methodology -- No storyboard and programming approach.
 
-# Lessons
+## Lessons
 
 * Principle of MVC programming approach 
 * Basics of UITableViewController  and UICollectionViewController
@@ -12,8 +12,10 @@ Firstly, I want to acknowledge that the project is inspired by Amazon's kindle a
 * Computed Properties and stored properties
 
 
-# End result ScreenShot.
+## Screen Shot of Application:
 ![Imgur](http://i.imgur.com/XODKt2C.png)
+
  
       
+
     
