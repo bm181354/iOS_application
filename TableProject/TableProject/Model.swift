@@ -6,7 +6,8 @@
 //  Copyright © 2017 Biken maharjan. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
 
 class Movies{
     
@@ -71,7 +72,50 @@ class Movies{
         return (movieComedy,movieNew,movieOld,movieCopy)
   
     }
+  
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+struct DemoConstants {
+  
+    static let button = DemoConstantsButton()
     
-    
-    
+    //TODO : remove slider
+    static let initialImage = (
+        fileName: "daredevil.jpg",
+        description: " demo"
+    )
+    static let localImages = [
+        (
+            fileName: "GOT.jpeg",
+            description: "Hotel Nirvana"
+        ),
+        (
+            fileName: "HOC.jpg",
+            description: "Hotel Nirvana"
+        ),
+        (
+            fileName: "daredevil.jpg",
+            description: "demo2"
+        ),
+        (
+            fileName: "daredevil.jpg",
+            description: "demo3"
+        ),
+        
+        (
+            fileName: "daredevil.jpg",
+            description: "demo4"
+        ),
+        (
+            fileName: "daredevil.jpg",
+            description: "demo5"
+        )]
+}
+
+
+struct DemoConstantsButton {
+    let borderWidth: CGFloat = 2
+    let cornerRadius: CGFloat = 20
+    let borderColor = UIColor.white
 }

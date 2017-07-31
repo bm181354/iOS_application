@@ -1,0 +1,6 @@
+framework module Pods_Netlfix {
+  umbrella header "Pods-Netlfix-umbrella.h"
+
+  export *
+  module * { export * }
+}

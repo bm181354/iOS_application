@@ -13,7 +13,13 @@ Firstly, I want to acknowledge that the project is inspired by Amazon's kindle a
 
 
 ## Screen Shot of Application:
+
+<img src="http://i.imgur.com/8RyFMTM.jpg">
+
+
 ![Imgur](http://i.imgur.com/XODKt2C.png)
+
+
 
  
       

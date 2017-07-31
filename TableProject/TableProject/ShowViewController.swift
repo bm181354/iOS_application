@@ -9,11 +9,30 @@
 import UIKit
 
 class ShowViewController: UIViewController {
+    
+    // this sound have
+    
+
+  
+    @IBOutlet weak var movieLabel: UILabel!
+ 
+    
+    
+    var movie: Movies?{
+        didSet{
+            guard let movieN = movie else {return}
+            guard let movieName = movieN.name else {return}
+            
+            print(movieName)
+
+        }
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+        movieLabel.text = movie?.name
     }
     
     
