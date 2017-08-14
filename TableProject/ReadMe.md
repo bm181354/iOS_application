@@ -13,3 +13,4 @@ An iOS Application that uses MVC design to construct a demo version of Netflix a
 
 ## Update Detail View Controller and WebView 
 
+![gif](https://media.giphy.com/media/GEQ7xCmDRJ7CE/giphy.gif)
