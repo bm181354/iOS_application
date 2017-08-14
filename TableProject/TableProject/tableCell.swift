@@ -24,10 +24,9 @@ class TableCell:UITableViewCell {
     
     
     override func awakeFromNib() {
-        print("1")
+        print("1=======")
     }
     
-
     
 }
 

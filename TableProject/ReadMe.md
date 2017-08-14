@@ -9,4 +9,7 @@ An iOS Application that uses MVC design to construct a demo version of Netflix a
 ## New update with automatic slider:
 
 ![gif](https://media.giphy.com/media/K3jvHeR9JRni/giphy.gif)
- 
+
+
+## Update Detail View Controller and WebView 
+

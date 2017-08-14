@@ -26,6 +26,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     @IBOutlet weak var daredevil: UIImageView!
     @IBOutlet weak var anotherCopy: UIImageView!
     @IBOutlet weak var copy2Iimage: UIImageView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -60,15 +61,16 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         print(pageIndex!)
         
         // style of the scrollsview
-        scrollView.auk.settings.contentMode = UIViewContentMode.scaleAspectFill
+        scrollView.auk.settings.contentMode = UIViewContentMode.scaleToFill
        
-        scrollView.clipsToBounds = false
+        //scrollView.clipsToBounds = false
         
         scrollView.auk.settings.pagingEnabled = true
         self.scrollView.auk.settings.pageControl.backgroundColor = UIColor.black
         scrollView.auk.startAutoScroll(delaySeconds: 7)
         scrollView.auk.scrollToPage(atIndex: 0, animated: true)
         //////
+        navigationItem.backBarButtonItem?.tintColor = .white
      
     }
     
@@ -78,14 +80,13 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-   
+
 
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
-        
+ 
 
     }
   
@@ -111,12 +112,12 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
    
             if let cell = sender as? CollectionCell{
                 
+                // connect variable here 
                   vc.movie = cell.movie
-  
-                
+                  vc.plot = cell.plot
+                  vc.collectionContent = cell
                 }
-
-            
+ 
         }
  
         
@@ -130,7 +131,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
   
      
-        let rect = CGRect(x:0,y:0,width:390,height:16)
+        let rect = CGRect(x:0,y:0,width:390,height:41)
         let headerView = UIView(frame: rect)
      
         // change this [Make it into center]
